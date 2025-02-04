@@ -5,11 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tag Inserter</title>
+
+  <!-- Office.js (required for Office Add-ins) -->
   <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
-  <script type="text/javascript" src="https://solarinformatics.sharepoint.com/sites/SolarInformatics-TeamsSite/General%20Documents/taskpane/taskpane.js"></script>
-  <link rel="stylesheet" href="https://solarinformatics.sharepoint.com/sites/SolarInformatics-TeamsSite/General%20Documents/taskpane/taskpane.css"/>
+
+  <!-- Load JS & CSS from GitHub Pages -->
+  <script type="text/javascript" src="https://annsmustafa191.github.io/word-addin-host/taskpane.js"></script>
+  <link rel="stylesheet" href="https://annsmustafa191.github.io/word-addin-host/taskpane.css" />
+
+  <!-- Microsoft Office UI Fabric -->
   <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
-  <link href="taskpane.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <!-- Sideload message (hidden once the app initializes) -->
@@ -31,6 +36,7 @@
     <button id="insertTagButton">Insert Tag</button>
   </div>
 
-  <script src="taskpane.js"></script>
+  <!-- Load JavaScript -->
+  <script src="https://annsmustafa191.github.io/word-addin-host/taskpane.js"></script>
 </body>
 </html>
