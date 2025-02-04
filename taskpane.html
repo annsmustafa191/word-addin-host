@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tag Inserter</title>
+  <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <script type="text/javascript" src="https://solarinformatics.sharepoint.com/sites/SolarInformatics-TeamsSite/General%20Documents/taskpane/taskpane.js"></script>
+  <link rel="stylesheet" href="https://solarinformatics.sharepoint.com/sites/SolarInformatics-TeamsSite/General%20Documents/taskpane/taskpane.css"/>
+  <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+  <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <!-- Sideload message (hidden once the app initializes) -->
+  <div id="sideload-msg" style="display: block;">
+    <p>Sideload your add-in to see its functionality.</p>
+  </div>
+
+  <!-- Main app content (hidden until the app initializes) -->
+  <div id="app-body" style="display: none;">
+    <h1>Insert Tags</h1>
+    <p>Select a tag from the dropdown and click "Insert Tag" to add it to your document at the cursor location:</p>
+
+    <!-- Dropdown for tags -->
+    <select id="tagsDropdown">
+      <option value="" disabled selected>Select a tag</option>
+    </select>
+
+    <!-- Button to insert tag -->
+    <button id="insertTagButton">Insert Tag</button>
+  </div>
+
+  <script src="taskpane.js"></script>
+</body>
+</html>
